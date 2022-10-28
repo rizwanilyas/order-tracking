@@ -1,0 +1,30 @@
+spring:
+  application.name: order-service
+  datasource:
+    url: jdbc:mysql://localhost:3307/order_tracking?characterEncoding=UTF-8
+    username: root
+    password: root
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        format_sql: true
+    show-sql: true
+    hibernate:
+     ddl-auto: update
+
+  main.allow-bean-definition-overriding: true
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+app:
+  rabbit:
+    queueName: teste
+
+
+

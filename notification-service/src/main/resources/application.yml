@@ -1,0 +1,25 @@
+server:
+  port: 8081
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+  mail:
+    host: smtp.gmail.com
+    port: 465
+    username: rizwan.confiz@gmail.com
+    password: ttvibgrnhqbqvtpc
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls.enable: true
+
+app:
+  rabbit:
+    queue.name: teste
+  agent:
+    email: rzwnilyas@gmail.com
